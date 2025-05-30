@@ -9,10 +9,10 @@ namespace FootballPortal
     public static class Constants
     {
         public static string TelegramToken =>
-        Environment.GetEnvironmentVariable("7391260321:AAHsyQvxpFzCOY6bvKmZlLwWoAt7BDLLde4") ?? throw new Exception("Missing TelegramToken");
+        Environment.GetEnvironmentVariable("TelegramToken") ?? throw new Exception("Missing TelegramToken");
 
         public static string FootballApiToken =>
-            Environment.GetEnvironmentVariable("4454f3c5c76ff8560dba8803687d301a") ?? throw new Exception("Missing FootballApiToken");
+            Environment.GetEnvironmentVariable("FootballApiToken") ?? throw new Exception("Missing FootballApiToken");
 
         public static string ApiBaseUrl =>
             Environment.GetEnvironmentVariable("ApiBaseUrl") ?? "https://v3.football.api-sports.io/";
