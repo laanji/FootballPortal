@@ -1,0 +1,270 @@
+[
+  {
+    "ContainingType": "FootballPortal.Controllers.CompareController",
+    "Method": "ComparePlayers",
+    "RelativePath": "api/Compare/players/{id1}/{id2}/{season}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id1",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "id2",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "season",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FootballPortal.Controllers.CompareController",
+    "Method": "CompareTeams",
+    "RelativePath": "api/Compare/teams/{id1}/{id2}/{leagueId}/{season}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id1",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "id2",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "leagueId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "season",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FootballPortal.Controllers.HighlightsController",
+    "Method": "GetHighlight",
+    "RelativePath": "api/Highlights/{teamName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teamName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FootballPortal.Controllers.LeaguesController",
+    "Method": "GetLeagues",
+    "RelativePath": "api/Leagues",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "country",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FootballPortal.Controllers.MatchesController",
+    "Method": "GetLiveMatches",
+    "RelativePath": "api/Matches/live",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FootballPortal.Controllers.PlayerController",
+    "Method": "GetPlayerProfile",
+    "RelativePath": "api/Player/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FootballPortal.Controllers.ScheduleController",
+    "Method": "GetSchedule",
+    "RelativePath": "api/Schedule/{teamId}/{season}/{count}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teamId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "season",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FootballPortal.Controllers.SearchController",
+    "Method": "SearchLeague",
+    "RelativePath": "api/Search/league/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FootballPortal.Controllers.SearchController",
+    "Method": "SearchTeam",
+    "RelativePath": "api/Search/team/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FootballPortal.Controllers.StandingsController",
+    "Method": "GetStandings",
+    "RelativePath": "api/Standings/{leagueId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "leagueId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FootballPortal.Controllers.StatsController",
+    "Method": "GetPlayerStats",
+    "RelativePath": "api/Stats/player/{playerId}/{season}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "season",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FootballPortal.Controllers.StatsController",
+    "Method": "GetTeamStats",
+    "RelativePath": "api/Stats/team/{teamId}/{leagueId}/{season}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teamId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "leagueId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "season",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FootballPortal.Controllers.TeamController",
+    "Method": "GetTeam",
+    "RelativePath": "api/Team/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FootballPortal.Controllers.TopScorersController",
+    "Method": "GetTopScorers",
+    "RelativePath": "api/TopScorers/{leagueId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "leagueId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
