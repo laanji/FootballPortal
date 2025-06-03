@@ -18,7 +18,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddHttpClient<FootballApiService>(client =>
 {
     client.BaseAddress = new Uri(Constants.ApiBaseUrl);
-    client.DefaultRequestHeaders.Add("x-apisports-key", Constants.FootballApiToken); 
+    client.DefaultRequestHeaders.Add("x-rapidapi-key", Constants.FootballApiToken);
+    client.DefaultRequestHeaders.Add("x-rapidapi-host", "https://api-football-v1.p.rapidapi.com");
 });
 
 builder.Services.AddEndpointsApiExplorer();
