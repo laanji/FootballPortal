@@ -15,7 +15,7 @@ namespace FootballPortal
             Environment.GetEnvironmentVariable("FootballApiToken") ?? throw new Exception("Missing FootballApiToken");
 
         public static string ApiBaseUrl =>
-            Environment.GetEnvironmentVariable("ApiBaseUrl") ?? "https://api-football-v1.p.rapidapi.com/v3";
+            Environment.GetEnvironmentVariable("ApiBaseUrl") ?? "https://api-football-v1.p.rapidapi.com/v3/";
 
         public static string DbConnection =>
             Environment.GetEnvironmentVariable("DbConnection") ?? throw new Exception("Missing DbConnection");
